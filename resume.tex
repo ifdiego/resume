@@ -1,0 +1,210 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% resume
+\begin{document}
+
+% header
+\begin{center}
+\textbf{\Huge \scshape Diego Alves da Silva} \\ \vspace{4pt}
+\small +55 11 97349 0957 $|$ \href{mailto:alvessd@live.com}{\underline{alvessd@live.com}} \\\vspace{1pt}
+\small São Bernardo do Campo/SP \\ \vspace{1pt}
+\href{https://linkedin.com/in/ifdiego}{\underline{linkedin.com/in/ifdiego}} $|$
+\href{https://github.com/ifdiego}{\underline{github.com/ifdiego}}
+\end{center}
+
+% summary
+\section{Perfil}
+\resumeSubHeadingListStart
+\resumeItem
+{Desenvolvedor com experiência em web e front-end. Interessado em resolver problemas e aprender novas coisas sobre desenvolvimento. Entusiasta de linguagens de programação, compiladores e softwares de código aberto.}
+\resumeSubHeadingListEnd
+
+% experience
+\section{Experiência}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Analista de Sistemas}{Fevereiro 2020 -- Atual}
+{Pampili}{}
+\resumeItemListStart
+\resumeItem{Trabalhei principalmente em produtos internos de sistemas de varejo e indústria com PL/SQL, Oracle Apex e JavaScript}
+\resumeItem{Desenvolvi em chatbot para Whatsapp que se comunica com mais de 200 clientes por dia usando NodeJs}
+\resumeItem{Mantenedor de uma aplicação de relógio de ponto rodando sobre Raspberry Pi com Python e SQLite}
+\resumeItem{Integração com sistemas de terceiros via API REST usando PL/SQL e NodeJS}
+\resumeItemListEnd
+
+\resumeSubheading
+{Desenvolvedor Web}{Janeiro 2015 -- Dezembro 2019}
+{Freelancer}{}
+\resumeItemListStart
+\resumeItem{Trabalhei em aplicações web usando React ou HTML, CSS e JavaScript puro para landing pages responsivas}
+\resumeItem{Implementei versões mobile de sites desktop para diversos clientes em HTML/CSS, JavaScript e jQuery usando templates de Java no back-end}
+\resumeItem{Usei diversas tecnologias do ecossistema front-end como Vue, React, Babel, Webpack, Styled-components, Gulp, SASS, Bulma e PostCSS}
+\resumeItem{Desenvolvimento completo de um site institucional para uma escola de inglês, incluindo um jogo online usando Canvas API}
+\resumeItem{Participei de projetos com diferentes requisitos e regras de negócio e pude contribuir com documentação técnica e revisão de código com outros desenvolvedores usando Git como principal ferramenta}
+\resumeItemListEnd
+
+\resumeSubheading
+{Desenvolvedor Frontend}{Outubro 2014 -- Dezembro 2014}
+{Unilogic}{}
+\resumeItemListStart
+\resumeItem{Codifiquei layouts de arquivos PSD para templates HTML/CSS e JavaScript}
+\resumeItem{Documentei projetos e trabalhei próximo a desenvolvedores back-end e designers para otimizar usabilidade}
+\resumeItem{Trabalhei com diferentes frameworks e bibliotecas como Bootstrap, LESS, UIKit, jQuery}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% education
+\section{Formação Acadêmica}
+\resumeSubHeadingListStart
+\resumeSubheading
+{FATEC São Caetano do Sul}{Agosto 2009 -- Janeiro 2013}
+{Desenvolvimento de Jogos Digitais}{}
+\resumeSubheading
+{Colégio Anchieta}{Julho 2007 -- Julho 2008}
+{Técnico em Informática}{}
+\resumeSubHeadingListEnd
+
+% projects
+\section{Projetos}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Minicalc} $|$ \emph{Rust}}{Abril 2024 -- Agosto 2024}
+\resumeItemListStart
+\resumeItem{Developed a simple interpreter for arithmetic expressions}
+\resumeItem{Implements lexical analysis to generate token and syntax analysis to create an abstrack syntax tree}
+\resumeItem{Generates machine code using Rust based on the analyzed input}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Elsevm} $|$ \emph{Go}}{Outubro 2022 -- Março 2023}
+\resumeItemListStart
+\resumeItem{Created a virtual machine in Go to learn its funcionality}
+\resumeItem{Included assembly programs for testing}
+\resumeItem{Dealt with external dependencies to handle user input data}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% programming skills
+\section{Conhecimentos}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Idiomas}{: Inglês (avançado)} \\
+\textbf{Programação}{: JavaScript, TypeScript, Go, Python, C, Rust} \\
+\textbf{Frontend}{: SPA (React), MVC (Vue), CSS-in-JS (Styled-components), Consumo de REST API} \\
+\textbf{Backend}{: Node.js e frameworks como Express e Koa.js, Django, REST APIs} \\
+\textbf{Outros}{: Git, Docker, PL/SQL, Linux e outros Sistemas Operacionais} \\
+}}
+\end{itemize}
+
+% relevant extracurricular
+\section{Extracurricular}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Curso Google Cloud Fundamentals: Core Infrastructure}, \emph{Coursera}}{2023}
+\resumeProjectHeading
+{\textbf{Curso NGINX: servidor Web, Proxy Reverso e API Gateway}, \emph{Alura}}{2022}
+\resumeProjectHeading
+{\textbf{Curso Node.js e JWT: autenticação com tokens}, \emph{Alura}}{2022}
+\resumeProjectHeading
+{\textbf{Curso Node.js: testes unitários e de integração}, \emph{Alura}}{2022}
+\resumeProjectHeading
+{\textbf{Curso Redis I: armazenando chaves e valores}, \emph{Alura}}{2022}
+\resumeProjectHeading
+{\textbf{Contribuição com a tradução da documentação oficial do React.js}, \emph{}}{2019}
+\resumeProjectHeading
+{\textbf{Curso Node.js para Iniciantes}, \emph{Nodebr.org}}{2018 -- 2019}
+\resumeProjectHeading
+{\textbf{Curso Responsive Website Development}, \emph{Goldsmiths University}}{2016 -- 2017}
+\resumeSubHeadingListEnd
+
+\end{document}
