@@ -1,5 +1,3 @@
 # resume
 
-Personal CV written in LaTeX.
-
-Based on [jakegut/resume](https://github.com/jakegut/resume).
+Typst source files for my personal CV, based on [this template](https://typst.app/universe/package/chicv).
